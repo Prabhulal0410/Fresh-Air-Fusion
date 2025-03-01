@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collection page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="./Font-familt-Lato/stylesheet.css">
+    <link rel="stylesheet" href="./slick/slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="./slick/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+            <nav class="navbar" id="top-navbar">
+                <div class="logo">
+                    <img src="./images/logo.png" alt="logo-img">
+                </div>
+                <div class="menu-a">
+                    <div class="menu">
+                            <ul>
+                                <a href="javascript:void(0);" class="icon" id="close-menu" onclick="toggleMenu()">
+                                    <svg aria-hidden="true" focusable="false" fill="none" width="16" class="icon icon-close" viewBox="0 0 16 16">
+                                        <path d="m1 1 14 14M1 15 15 1" stroke="currentColor" stroke-width="1.5"></path>
+                                    </svg>
+                                </a>
+                            <li><a href="./home.html">HOME</a></li>
+                            <li><a href="./product.html">PRODUCT</a></li>
+                            <li><a href="./collection.html">COLLECTIONS</a></li>
+                            <li><a href="./about.html">ABOUT</a></li>
+                            <li><a href="./faq.html">FAQ</a></li>
+                            <li><a href="./contact-us.html">CONTACT US</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="frame-a">
+                        <div class="frame">
+                            <a href="javascript:void(0)">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="41" height="40" viewBox="0 0 41 40" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M21.0248 12C18.7593 12 16.9224 13.8365 16.9219 16.1019V16.1028H17.4219L16.9219 16.1009L16.9219 16.1019C16.9138 18.3605 18.7376 20.1981 20.9967 20.2057L20.9983 20.2057H21.0248C23.2904 20.2057 25.1276 18.3696 25.1276 16.1028C25.1276 13.8371 23.2905 12 21.0248 12ZM17.9219 16.1028C17.9219 14.3894 19.3113 13 21.0248 13C22.7382 13 24.1276 14.3894 24.1276 16.1028C24.1276 17.8172 22.7383 19.2057 21.0248 19.2057H20.9992C19.2929 19.1995 17.9154 17.8114 17.9219 16.1047H17.9219V16.1028ZM21.0249 21.8245C19.4982 21.8245 18.025 21.9383 16.918 22.3095C16.3621 22.4959 15.8614 22.7592 15.4952 23.1393C15.1171 23.5316 14.9032 24.028 14.9032 24.6188C14.9032 25.2084 15.1154 25.7049 15.4915 26.0984C15.8561 26.4798 16.3551 26.745 16.9104 26.9334C18.0159 27.3082 19.4896 27.4254 21.0249 27.4254C22.5513 27.4254 24.0242 27.3128 25.1309 26.9428C25.6867 26.7569 26.1875 26.4941 26.5537 26.1143C26.9319 25.7222 27.1457 25.2258 27.1457 24.6348C27.1457 24.045 26.9337 23.5481 26.5578 23.1542C26.1934 22.7723 25.6945 22.5065 25.1392 22.3178C24.0339 21.9421 22.5603 21.8245 21.0249 21.8245ZM15.9032 24.6188C15.9032 24.2922 16.013 24.043 16.2152 23.8332C16.4294 23.611 16.7656 23.4154 17.236 23.2576C18.1819 22.9404 19.5195 22.8245 21.0249 22.8245C22.5376 22.8245 23.8744 22.9441 24.8174 23.2646C25.2863 23.424 25.6211 23.6211 25.8343 23.8445C26.036 24.0559 26.1457 24.3068 26.1457 24.6348C26.1457 24.9618 26.0358 25.2107 25.8339 25.4202C25.62 25.642 25.284 25.8371 24.8137 25.9944C23.868 26.3106 22.5306 26.4254 21.0249 26.4254C19.5121 26.4254 18.175 26.3063 17.2316 25.9863C16.7625 25.8272 16.4276 25.6305 16.2144 25.4074C16.0127 25.1965 15.9032 24.9462 15.9032 24.6188Z" fill="#121212"/>
+                                    <circle cx="20.9032" cy="20" r="19.5" stroke="black"/>
+                                </svg>
+                            </a>
+                            <a href="javascript:void(0)">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="41" height="40" viewBox="0 0 41 40" fill="none">
+                                <circle cx="20.9032" cy="20" r="19.5" stroke="black"/>
+                                <rect x="13.4032" y="16.5" width="15" height="10" rx="2.5" stroke="black"/>
+                                <path d="M23.9032 19V16C23.9032 14.3431 22.5601 13 20.9032 13V13C19.2463 13 17.9032 14.3431 17.9032 16V19" stroke="black" stroke-linecap="round"/>
+                            </svg>
+                            </a>
+                        </div>
+                </div>
+                <a href="javascript:void(0);" class="icon" id="hamburger-menu" onclick="toggleMenu()">
+                    <svg aria-hidden="true" fill="none" focusable="false" width="24" class="header__nav-icon icon icon-hamburger" viewBox="0 0 24 24">
+                        <path d="M1 19h22M1 12h22M1 5h22" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"></path>
+                    </svg>
+                </a>
+                <div class="header-ourlay">
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="top-text">
+                <p class="top-p">Fresh air fusion collections</p>
+                <p class="bottom-p">It’s the first place you think of after a long day, a full weekend, or a far journey. Home is in the air, right when
+                    you walk through that door. It’s what you can see, feel and sense.</p>
+            </div>
+            <div class="top-div-collection">
+                <div class="common-img">
+                    <div class="img-1">
+                        <img src="./images/collection-page-1.png">
+                    </div>
+                    <p>NANO ATOMIZATION</p>
+                </div>
+                <div class="common-img">
+                    <div class="img-2">
+                        <img src="./images/collection-page-2.png">
+                    </div>
+                    <p>ULTRA LONG BATTERY LIFE</p>
+                </div>
+                <div class="common-img">
+                    <div class="img-3">
+                        <img src="./images/collection-page-3.png">
+                    </div>
+                    <p>SMART PHONE APP CONTROL</p>
+                </div>
+                <div class="common-img">
+                    <div class="img-4">
+                        <img src="./images/collection-page-4.png">
+                    </div>
+                    <p>TIMED FRAGRANCE SPRAY</p>
+                </div>
+                <div class="common-img">
+                    <div class="img-5">
+                        <img src="./images/collection-page-5.png">
+                    </div>
+                    <p>NO WATER IS REQUIRED</p>
+                </div>
+                <div class="common-img">
+                    <div class="img-6">
+                        <img src="./images/collection-page-6.png">
+                    </div>
+                    <p>NO FLAMEBLE</p>
+                </div>
+                <div class="common-img">
+                    <div class="img-7">
+                        <img src="./images/collection-page-7.png">
+                    </div>
+                    <p>Strong and Pure scent</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="best-seller collection">
+        <div class="container">
+            <div class="main">
+                <div class="main-card">
+                <div class="product">
+                    <div class="product-img">
+                        <img src="./images/Group 201.png">
+                    </div>
+                    <div class="product-text">
+                        <div class="color">
+                            <p>FAF 3000</p>
+                        </div>
+                        <div class="price">
+                            <p>$ 190</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn">
+                    <a href="javascript:void(0)">SHOP NOW</a>
+                </div>
+                </div>
+                <div class="main-card">
+                    <div class="product">
+                        <div class="product-img">
+                            <img src="./images/Group 205.png">
+                        </div>
+                        <div class="product-text">
+                            <div class="color">
+                                <p>FAF 1500</p>
+                            </div>
+                            <div class="price">
+                                <p>$ 129</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn">
+                        <a href="javascript:void(0)">SHOP NOW</a>
+                    </div>
+                </div>
+                <div class="main-card">
+                    <div class="product">
+                        <div class="product-img">
+                            <img src="./images/Group 206.png">
+                        </div>
+                        <div class="product-text">
+                            <div class="color">
+                                <p>FAF 1000</p>
+                            </div>
+                            <div class="price">
+                                <p>$ 99</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn">
+                        <a href="javascript:void(0)">SHOP NOW</a>
+                    </div>
+                </div>
+                <div class="main-card">
+                    <div class="product">
+                        <div class="product-img">
+                            <img src="./images/collection-page-8.png">
+                        </div>
+                        <div class="product-text">
+                            <div class="color">
+                                <p>FAF 3000</p>
+                            </div>
+                            <div class="price">
+                                <p>$ 190</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn">
+                        <a href="javascript:void(0)">SHOP NOW</a>
+                    </div>
+                </div>
+                <div class="main-card">
+                        <div class="product">
+                            <div class="product-img">
+                                <img src="./images/collection-page-9.png">
+                            </div>
+                            <div class="product-text">
+                                <div class="color">
+                                    <p>FAF 1500</p>
+                                </div>
+                                <div class="price">
+                                    <p>$ 129</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn">
+                            <a href="javascript:void(0)">SHOP NOW</a>
+                        </div>
+                </div>
+                <div class="main-card">
+                        <div class="product">
+                            <div class="product-img">
+                                <img src="./images/collection-page-10.png">
+                            </div>
+                            <div class="product-text">
+                                <div class="color">
+                                    <p>FAF 1000</p>
+                                </div>
+                                <div class="price">
+                                    <p>$ 99</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn">
+                            <a href="javascript:void(0)">SHOP NOW</a>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-page-gallery collection-page">
+        <div class="container">
+            <div class="top-text">
+                <p class="top-p">HEALTHY LIVING EXPERIENCE</p>
+                <p class="bottom-p">It’s the first place you think of after a long day, a full weekend, or a far journey. Home is in the air, right when
+                you walk through that door. It’s what you can see, feel and sense.</p>
+            </div>
+            <div class="images">
+                <div class="img-01">
+                    <img src="./images/product-page living room.png">
+                </div>
+                <div class="img-01">
+                    <img src="./images/product-page office.png">
+                </div>
+                <div class="img-01">
+                    <img src="./images/product-page restuarant.png">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="top-div">
+                <div class="footer-1">
+                    <div class="inner-footer">
+                        <img src="./images/logo.png" alt="logo">
+                        <p>Eco Friendly  scent that creates pleasant ambiance for home, office, hotel, fitness center and more.. Long lasting and uplifting aroma that rejuvenate air </p>
+                        <div class="footer-1img">
+                            <a href="javascript:void(0)">
+                                <img src="./images/socila media.png" alt="social-media-logo">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-2">
+                    <div class="inner-footer">
+                        <h3>SHOP</h3>
+                        <ul>
+                            <li><a href="javascript:void(0)">ESCAPE a Scent</a></li>
+                            <li><a href="javascript:void(0)">MYSTERY a Scent</a></li>
+                            <li><a href="javascript:void(0)">PURITY a Scent</a></li>
+                            <li><a href="javascript:void(0)">SMOKE AWAY a Scent</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-3">
+                    <div class="inner-footer">
+                        <h3>CONTACT</h3>
+                        <ul>
+                            <li><a href="./contact-us.html">Contact Us</a></li>
+                            <li><a href="javascript:void(0)">Privacy Policy</a></li>
+                            <li><a href="javascript:void(0)">Terms and Condition</a></li>
+                            <li><a href="javascript:void(0)">Returns and Refund Policy </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-4">
+                    <div class="inner-footer">
+                        <h3>DON’T MISS THE TIPS</h3>
+                        <p>Subscribe and receive the latest's news and
+                            Be first to know about our exclusive discounts!</p>
+                        <div class="email-container">
+                            <input type="email" placeholder="Enter your emaill address here">
+                            <img class="email-img" src="./images/Group 210.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./slick/slick-1.8.1/slick/slick.min.js"></script>
+    <script>
+         // code for side navabr //
+    let scrollPosition = 0;
+function toggleMenu() {
+    const navbar = document.getElementById("top-navbar");
+    const body = document.body;
+    if (navbar.classList.contains("responsive")) {
+        navbar.classList.remove("responsive");
+        // Restore scrolling
+        body.style.overflow = ""; 
+        body.style.position = ""; 
+        body.style.top = "";
+        window.scrollTo(0, scrollPosition); // Restore previous scroll position
+        document.removeEventListener("click", closeNavbarOnClickOutside);
+    } else {
+        navbar.classList.add("responsive");
+        scrollPosition = window.scrollY;
+        // Lock the body scroll
+        body.style.overflow = "hidden"; // Disable scroll
+        body.style.position = "fixed"; // Fix the body in place
+        body.style.top = `-${scrollPosition}px`; // Maintain scroll position
+        body.style.width = "100%"; // Prevent horizontal scroll
+        // Add an outside click listener
+        setTimeout(() => {
+            document.addEventListener("click", closeNavbarOnClickOutside);
+        });
+    }
+}
+function closeNavbarOnClickOutside(event) {
+    const navbar = document.getElementById("top-navbar");
+    const menu = navbar.querySelector(".menu-a");
+    const hamburgerMenu = document.getElementById("hamburger-menu");
+    // If the click is outside the menu and not on the hamburger icon
+    if (!menu.contains(event.target) && event.target !== hamburgerMenu) {
+        toggleMenu(); // Close the navbar
+    }
+}
+
+        // code for hero slider //
+        $(document).ready(function(){
+    if($(window).width() < 750) {
+        $('.top-div-collection').slick({
+        infinite: false,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        responsive: [                //  this is for responsive 
+        {
+            breakpoint: 575, 
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll:1,
+            }
+        }
+        ]
+        });
+    }
+});
+
+        // code for collection slider //
+        $(document).ready(function(){
+    if($(window).width() < 575) {
+        $('.main').slick({
+        dots: false,
+        arrows: false,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        responsive: [                //  this is for responsive 
+        {
+            breakpoint: 480, 
+            settings: {
+                slidesToShow: 1,
+            }
+        }
+        ]
+        });
+    }
+});
+
+    </script>
+</body>
+</html>
